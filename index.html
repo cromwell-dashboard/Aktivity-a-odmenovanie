@@ -1147,6 +1147,93 @@ td .svc-tag { white-space: normal; word-break: break-word; max-width: 130px; }
 .approve-reject-box { display: flex; flex-direction: column; gap: 8px; }
 .approve-textarea { width: 100%; min-height: 56px; resize: vertical; font-family: inherit; }
 .approve-note { font-size: 11px; margin-top: 3px; font-style: italic; }
+
+/* ===== MOBILN\u00c1 VERZIA ===== */
+@media (max-width: 640px) {
+  .app { zoom: 1 !important; padding: 0 !important; font-size: 15px; }
+  .topbar { flex-direction: column; align-items: stretch; gap: 8px; padding: 10px 12px; border-radius: 0; }
+  .brand { justify-content: flex-start; }
+  .brand-logo { max-height: 30px; }
+  .brand-title { font-size: 16px; }
+  .brand-sub { font-size: 11px; }
+  .brand-divider { display: none; }
+  .header-logout { align-self: flex-end; margin-top: -34px; }
+  .tabs { overflow-x: auto; scrollbar-width: none; flex-wrap: nowrap; border-radius: 0; border-left: none; border-right: none; padding: 4px 8px; gap: 2px; }
+  .tabs::-webkit-scrollbar { display: none; }
+  .tab { white-space: nowrap; flex-shrink: 0; font-size: 13px; padding: 8px 12px; }
+  .tabs-spacer { display: none; }
+  .main { gap: 12px; padding: 10px; }
+  .tab-panel { gap: 12px; }
+  .card { padding: 12px; border-radius: 12px; }
+  .month-bar-row { padding: 8px 10px; margin: 0 0 4px; }
+  .grid-kpi { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .kpi-card { padding: 11px 12px; }
+  .kpi-value { font-size: 19px; }
+  .kpi-label { font-size: 10px; }
+  .grid-2 { grid-template-columns: 1fr; gap: 12px; }
+  .nb-sticky-kpi { position: static; }
+
+  /* Tabu\u013eky: horizont\u00e1lny scroll s jemn\u00fdm okrajom */
+  .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; border: 1px solid var(--line); border-radius: 10px; }
+  .table-wrap table { min-width: 720px; }
+  table { font-size: 12px; }
+  th, td { padding: 6px 8px; }
+
+  /* Filtre stackovan\u00e9 */
+  .filters-row { flex-direction: column; align-items: stretch; gap: 8px; }
+  .filter-field { width: 100%; }
+  .filters-spacer { display: none; }
+  .filter-field-btn { width: 100%; }
+  .filter-field-btn .btn { width: 100%; justify-content: center; }
+  .search-wrap { width: 100%; }
+
+  /* Modal cel\u00e1 \u0161\u00edrka */
+  .modal-overlay { padding: 0; align-items: flex-end; }
+  .modal, .modal-wide { max-width: 100%; width: 100%; max-height: 94vh; border-radius: 16px 16px 0 0; }
+  .form-grid { grid-template-columns: 1fr 1fr; }
+  .form-grid-3 { grid-template-columns: 1fr; }
+  .modal-footer { flex-direction: column-reverse; gap: 8px; }
+  .modal-footer .btn { width: 100%; justify-content: center; }
+
+  /* Export bar */
+  .export-bar { flex-direction: column; align-items: stretch; gap: 10px; }
+  .export-bar-ctl { flex-wrap: wrap; }
+
+  /* Pl\u00e1n a vyhodnotenie */
+  .pl-sec { padding: 14px 14px 16px; }
+  .pl-shead { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .pl-ctl { width: 100%; }
+  .pl-select { flex: 1; }
+  .pl-kpis6 { grid-template-columns: 1fr; gap: 8px; }
+  .pl-kpi-hdr { display: none; }
+  .pl-kpi { display: grid; grid-template-columns: 1fr auto auto; align-items: center; gap: 8px; }
+  .pl-kpi .l { grid-column: 1; }
+  .pl-2charts { grid-template-columns: 1fr; }
+  .pl-seg-wrap { overflow-x: auto; flex-wrap: nowrap; scrollbar-width: none; max-width: 100%; }
+
+  /* T\u00fd\u017edenn\u00fd preh\u013ead */
+  .wk-grid, .wk-layout { grid-template-columns: 1fr !important; }
+  .wk-side { width: 100%; }
+  .wk-act-row { grid-template-columns: 60px 1fr 16px; }
+  .wk-act-obs { display: none; }
+  .preh-act-row { grid-template-columns: 66px 1fr auto; }
+  .preh-act-obs { display: none; }
+
+  /* New Business detail tabu\u013eka - necha\u0165 scrollova\u0165 */
+  .obchodnik-block-header { flex-direction: column; align-items: flex-start; gap: 6px; }
+  .deal-grid { grid-template-columns: 1fr !important; }
+
+  /* Sledova\u010d */
+  .trk-grid { grid-template-columns: 1fr !important; }
+
+  /* Toast */
+  .toast { left: 12px; right: 12px; bottom: 12px; width: auto; }
+}
+@media (max-width: 400px) {
+  .grid-kpi { grid-template-columns: 1fr; }
+  .form-grid { grid-template-columns: 1fr; }
+  .brand-title { font-size: 15px; }
+}
 `,_h=(0,Ym.createRoot)(document.getElementById("root"));_h.render(o.default.createElement(Hh,null));})();
 /*! Bundled license information:
 
